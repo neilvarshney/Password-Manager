@@ -6,6 +6,18 @@ A secure, client-side encrypted password manager built as a Chrome extension wit
 
 This password manager provides a secure way to store and retrieve website credentials while ensuring that even if the database is compromised, user passwords remain encrypted and inaccessible without the user's master password.
 
+## Screenshots
+
+
+### Dashboard Page
+![Dashboard Page](src/frontend/public/dashboard.png)
+
+### Login Page
+![Login Page](src/frontend/public/login.png)
+
+### Get Password Page
+![Get Password Page](src/frontend/public/get.png)
+
 ## Key Features
 
 ### Security Features
