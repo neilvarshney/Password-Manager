@@ -318,8 +318,8 @@ typings/
 dist
 
 # Gatsby files
-.cache/
-public
+# .cache/
+# public
 
 # Storybook build outputs
 .out
