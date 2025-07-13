@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&display=swap');
+
+html, body {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+}
+
+.popup-container {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px 15px;
+    width: calc(100% - 30px); 
+}
+
+.title_text {
+    margin: 0;
+    font-weight: 200;
+    font-family: 'Chiron Hei HK';
+    color: white;
+    font-size: 28px;
+}
+
+.back_button a:link {
+    text-decoration: none; 
+    color: #999999;
+    font-weight: 200;
+    font-family: 'Chiron Hei HK';
+    font-size: 16px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.back_button a:hover {
+    color: white;
+}
+
+.login_inputs{
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+}
+
+.input_container {
+    font-family: 'Chiron Hei HK';
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+
+    border: 1px solid;
+    border-color: #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    width: 250px;
+
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input_container:hover{
+    border-color: #999999;
+}
+
+.input_container:focus{
+    border-color: white;
+}
+
+
+.login_button{
+
+    font-family: 'Chiron Hei HK';
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+
+    border: 1px solid #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    width: 250px;
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.login_button:hover{
+    background-color: #1f1f1f;
+}
+
+.create_account_text{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Chiron Hei HK';
+    font-weight: 200;
+    font-size: 15px;
+    color: white; 
+}
+.create_account_text a:link{
+    color: white;                                                                   
+    text-decoration-color: rgb(98, 98, 161); /* Remove the underline */
+    transition: color 0.3s ease-in-out;
+}
+
+.create_account_text a:hover{
+    color: #8f64df;
+}
+
+.success_message {
+    color: rgb(3, 206, 3); 
+}
+
+.error_message{
+    color: rgb(128, 2, 2);
+}
+
+.backend_response_text{
+    
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Chiron Hei HK';
+    font-weight: 400;
+    font-size: 15px;
+}

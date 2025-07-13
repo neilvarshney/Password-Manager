@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <link href="login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="popup-container">
+
+        <div class = "title_container">
+            <h1 class="title_text">create account</h1>
+
+            <h1 class="back_button">
+                <a href="../index.html"> &larr; Back</a>
+            </h1>
+        </div>
+
+        <div >
+            <form id = "createAccountForm" class="login_inputs">
+                <input
+                    class = "input_container"
+                    type = "username"
+                    id = "usernameInput"
+                    name = "usernameInput"
+                    placeholder="Enter username..."
+                >
+
+                <input
+                    class = "input_container"
+                    type = "password"
+                    id = "passwordInput"
+                    name = "passwordInput"
+                    placeholder="Enter password..."
+                >
+
+                <button
+                    class = "login_button"
+                    id = "createAccountButton"
+                    type = "submit"
+                >
+                    Create Account
+                </button>
+
+                <h1 class = "create_account_text">
+                    Have an account? 
+                    <a href="login.html">
+                        Login
+                    </a>    
+                </h1>
+
+                <h1 id="backendResponse" class = "backend_response_text">
+                </h1>
+            </form>
+        </div>
+    </div>
+
+    <script src="createAccount.js"></script>
+</body>
+</html>

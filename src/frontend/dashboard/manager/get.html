@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <link href="../dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="popup-container">
+
+        <div class = "title_container">
+            <h1 class="title_text">get password </h1>
+
+            <h1 class="back_button">
+                <a href="../dashboard.html"> &larr; Back</a>
+            </h1>
+        </div>
+
+        <div >
+            <form id = "getPasswordForm" class="login_inputs">
+                <input
+                    class = "input_container"
+                    type = "text"
+                    id = "websiteInput"
+                    name = "websiteInput"
+                    placeholder="Enter website..."
+                >
+
+                <button
+                    class = "get_button"
+                    id = "getButton"
+                    type = "submit"
+                >
+                    Get Password
+                </button>
+
+                <h1 id="backendResponse" class = "backend_response_text">
+                </h1>
+            </form>
+        </div>
+    </div>
+
+    <script src="get.js"></script>
+</body>
+</html>
