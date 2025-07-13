@@ -124,91 +124,6 @@ This password manager provides a secure way to store and retrieve website creden
    - The Password Manager extension should appear in your extensions list
    - Click the extension icon in the Chrome toolbar to access the interface
 
-## API Documentation
-
-### Authentication Endpoints
-
-#### Create Account
-```
-POST /accounts
-Content-Type: application/json
-
-{
-  "username": "user@example.com",
-  "password": "secure_password"
-}
-```
-
-#### Login
-```
-POST /sessions
-Content-Type: application/json
-
-{
-  "username": "user@example.com", 
-  "password": "secure_password"
-}
-```
-
-### Password Management Endpoints
-
-All password management endpoints require JWT authentication via Authorization header.
-
-#### Store Password
-```
-POST /passwords
-Authorization: Bearer <jwt_token>
-Content-Type: application/json
-
-{
-  "site": "example.com",
-  "password": "website_password",
-  "user_password": "master_password"
-}
-```
-
-#### Retrieve Password
-```
-POST /passwords/get
-Authorization: Bearer <jwt_token>
-Content-Type: application/json
-
-{
-  "site": "example.com",
-  "user_password": "master_password"
-}
-```
-
-## Project Structure
-
-```
-Password Manager/
-├── README.md                 # Project documentation
-├── requirements.txt          # Python dependencies
-├── .gitignore               # Git ignore rules
-└── src/
-    ├── backend/
-    │   └── app.py           # Flask application with all endpoints
-    ├── frontend/
-    │   ├── auth/
-    │   │   ├── login.html   # Login interface
-    │   │   ├── login.js     # Login logic and JWT handling
-    │   │   ├── createAccount.html
-    │   │   └── createAccount.js
-    │   ├── dashboard/
-    │   │   ├── dashboard.html    # Main dashboard interface
-    │   │   ├── dashboard.js      # Session management
-    │   │   └── manager/
-    │   │       ├── create.html   # Password creation form
-    │   │       ├── create.js     # Password storage logic
-    │   │       ├── get.html      # Password retrieval form
-    │   │       └── get.js        # Password retrieval logic
-    │   ├── index.html            # Landing page
-    │   ├── index.css             # Main stylesheet
-    │   └── manifest.json         # Chrome extension configuration
-    └── manifest.json             # Extension manifest
-```
-
 ## Security Considerations
 
 ### Current Security Strengths
@@ -218,18 +133,6 @@ Password Manager/
 - bcrypt password hashing with salt
 - Secure memory handling (password clearing)
 - CORS configuration for development
-
-### Recommended Improvements for Production
-- Implement rate limiting on authentication endpoints
-- Add password strength validation and requirements
-- Use chrome.storage.encrypted instead of localStorage for JWT tokens
-- Add multi-factor authentication support
-- Implement secure session management to reduce password re-entry
-- Add audit logging for security events
-- Use HTTPS in production with proper SSL certificates
-- Implement database connection encryption
-- Add input validation and sanitization
-- Consider implementing password categories and tags
 
 ## Development Guidelines
 
@@ -245,14 +148,7 @@ Password Manager/
 - Backend automatically extracts username from JWT tokens
 - Frontend stores JWT token in localStorage for session persistence
 
-## Contributing
-
-This is a personal learning project demonstrating advanced security practices. For production use, consider implementing the security improvements listed above and conducting thorough security audits.
-
-## License
-
-This project is for educational purposes. Please ensure compliance with relevant security and privacy regulations before using in production environments.
 
 ## Support
 
-For questions or issues related to this project, please review the security considerations and ensure proper implementation of all recommended improvements before deployment. 
+For questions or issues related to this project, please review the security considerations and/or contact me. 
