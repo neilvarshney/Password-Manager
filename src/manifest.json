@@ -3,9 +3,12 @@
     "name" : "Password Manager",
     "version" : "1.0",
     "description" : "Password Manager Chrome Extension",
+    "icons": {
+        "128": "frontend/public/favicon.png"
+    },
     "action" : {
-        "default_popup" : "frontend/index.html"
+        "default_popup" : "frontend/index.html",
+        "default_icon": "frontend/public/favicon.png"
     },
     "permissions" : [ "storage" ]
-    
 }
