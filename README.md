@@ -8,7 +8,6 @@ This password manager provides a secure way to store and retrieve website creden
 
 ## Screenshots
 
-
 ### Dashboard Page
 ![Dashboard Page](src/frontend/public/dashboard.png)
 
